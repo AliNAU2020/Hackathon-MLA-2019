@@ -1,0 +1,120 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:20px;
+  font-family:"Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9, .pimg10, .pimg11{
+  position:relative;
+  opacity:0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+ /*
+   fixed = Parallax
+   scrolled = normal
+*/
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../images/image1america.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../images/newyorkcity.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../images/downtown-los-angeles-skyline-daytime.png');
+  min-height:400px;
+}
+
+.pimg4{
+  background-image:url('../images/chicago.jpg');
+  min-height:100%;
+}
+
+.pimg5{
+  background-image:url('../images/houston.jpg');
+  min-height:400px;
+}
+
+.pimg6{
+  background-image:url('../images/phoenix.jpg');
+  min-height:400px;
+}
+
+.pimg7{
+  background-image:url('../images/philadelphia.jpg');
+  min-height:100%;
+}
+
+.pimg8{
+  background-image:url('../images/san-antonio.jpg');
+  min-height:400px;
+}
+
+.pimg9{
+  background-image:url('../images/san-diego.jpg');
+  min-height:400px;
+}
+.pimg10{
+  background-image:url('../images/dallas.jpg');
+  min-height:100%;
+}
+
+.pimg11{
+  background-image:url('../images/san-joseca.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%
+  text-align:center;
+  color:#000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform:uppercase;
+}
+
+.ptext.border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext.border.trans{
+  background-color: transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2,.pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9, .pimg10, .pimg11 {
+    background-attachment:scroll;
+  }
+}
